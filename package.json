@@ -1,0 +1,37 @@
+{
+  "name": "test-for-moneo",
+  "version": "1.0.0",
+  "description": "Moneo test",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "node",
+    "neo4j",
+    "mongodb",
+    "moneo"
+  ],
+  "author": "Akarsh Seggemu",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "body-parser": "^1.14.0",
+    "compression": "^1.5.2",
+    "cookie-parser": "^1.4.0",
+    "express": "^4.13.3",
+    "method-override": "^2.3.5",
+    "moneo": "^1.1.2",
+    "mongoose": "^4.0.0",
+    "morgan": "^1.6.1",
+    "neo4j": "^2.0.0-RC1",
+    "nodemon": "^1.7.0"
+  }
+}

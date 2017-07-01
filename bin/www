@@ -1,0 +1,21 @@
+var http = require('http');
+var app = require('./../app');
+
+var mongoose = require('mongoose');
+var neo4j    = require('neo4j');
+
+var moneo = require("moneo")({url:'http://localhost:7474'});
+
+// connecting to mongodb
+// For more details refer to https://github.com/Automattic/mongoose#connecting-to-mongodb
+require('./../connection/mongofile')('mongodb://localhost/testdbmonograph', mongoose);
+require('./../connection/moneofile')(moneo, mongoose);
+
+app.set('port', 3000);
+var server = app.listen(app.get('port'), function() {
+  console.log('It is running');
+});
+
+process.on('SIGTERM',  function (err) {
+  process.exit(1);
+});
