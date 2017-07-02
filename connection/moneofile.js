@@ -24,9 +24,6 @@ module.exports = function (moneo, mongoose) {
 	});
 
 	Notice.save(function (notice) {
-		notice.cypherQuery({query: 'match (n) return n'}, function (err, res) {
-				console.log(res.length);
-		});
 	});
 
 }

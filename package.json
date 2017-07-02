@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "Moneo test",
   "main": "index.js",
+  "readme": "README.md",
   "scripts": {
     "start": "nodemon bin/www"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/akarsh/test-for-moneo.git"
   },
   "keywords": [
     "node",

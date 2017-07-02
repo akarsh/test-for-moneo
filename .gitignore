@@ -28,6 +28,3 @@ node_modules
 
 # Graphdb  directory
 graphdb
-
-# Package lock file
-package-lock.json

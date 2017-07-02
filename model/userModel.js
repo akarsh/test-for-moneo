@@ -24,5 +24,9 @@ module.exports = function (moneo, mongoose) {
 	});
 	UserSchema.plugin(moneo);
 
-	return mongoose.model('User', UserSchema);
+	var usermodel = mongoose.model('User', UserSchema);
+	usermodel.cypherQuery({query: 'match (n:User) return n limit 1'}, function (err, res) {
+				console.log("Result of user model "+res);
+		});
+	return usermodel;
 }

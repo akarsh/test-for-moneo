@@ -20,5 +20,9 @@ module.exports = function (moneo, mongoose) {
 	});
 	NoticeSchema.plugin(moneo);
 
-	return mongoose.model('Notice', NoticeSchema);
+	var noticemodel = mongoose.model('Notice', NoticeSchema);
+	noticemodel.cypherQuery({query: 'match (n) return n'}, function (err, res) {
+				console.log("Result of notice model "+res.length);
+		});
+	return noticemodel;
 }
