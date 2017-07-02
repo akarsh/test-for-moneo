@@ -20,5 +20,5 @@ module.exports = function (moneo, mongoose) {
 	});
 	NoticeSchema.plugin(moneo);
 
-	return mongoose.model('Noticia', NoticeSchema);
+	return mongoose.model('Notice', NoticeSchema);
 }

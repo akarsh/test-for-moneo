@@ -2,7 +2,7 @@ module.exports = function (moneo, mongoose) {
 	var moneo = require("moneo")({url:'http://localhost:7474'});
 
 	var User = require('./../model/userModel')(moneo, mongoose);
-	var Noticia = require('./../model/noticiaModel')(moneo, mongoose);
+	var Notice = require('./../model/noticeModel')(moneo, mongoose);
 
 	var _user = {
 		username: 'aki',
@@ -18,7 +18,7 @@ module.exports = function (moneo, mongoose) {
 	};
 
 	var User = new User(_user);
-	var Noticia = new Noticia(_noticia);
+	var Notice = new Notice(_notice);
 
 	User.save(function (user) {
 	});
