@@ -1,4 +1,5 @@
 module.exports = function (uri, mongoose){
+  // connection settings for mongoose
   mongoose.connect(uri);
 
   var db = mongoose.connection;

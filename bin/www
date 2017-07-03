@@ -1,9 +1,11 @@
 var http = require('http');
 var app = require('./../app');
 
+// mongoose package
 var mongoose = require('mongoose');
+// neo4j package
 var neo4j    = require('neo4j');
-
+// moneo package and neo4j connection settings
 var moneo = require("moneo")({url:'http://localhost:7474'});
 
 // connecting to mongodb
@@ -11,6 +13,7 @@ var moneo = require("moneo")({url:'http://localhost:7474'});
 require('./../connection/mongofile')('mongodb://localhost/testdbmonograph', mongoose);
 require('./../connection/moneofile')(moneo, mongoose);
 
+// Go to http://localhost:3000 to check if the server is running or not
 app.set('port', 3000);
 var server = app.listen(app.get('port'), function() {
   console.log('It is running');

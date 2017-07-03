@@ -14,7 +14,7 @@
   "keywords": [
     "node",
     "neo4j",
-    "mongodb",
+    "mongoose",
     "moneo"
   ],
   "author": "Akarsh Seggemu",
