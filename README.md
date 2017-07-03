@@ -1,4 +1,6 @@
-# test-for-neo
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+
+# test-for-moneo
 This project demonstrates on how you can implement the [moneo plugin / middleware](https://github.com/srfrnk/moneo/) for Mongoose to Neo4j.
 
 The project file structure
@@ -22,3 +24,17 @@ cd into folder `test-for-neo` then
 ## Run
 
     nodemon bin/www
+
+### Credits
+This application uses Open Source components. You can find the source code of their open source projects along with license information below. We acknowledge and are grateful to these developers for their contributions to open source.
+* Project: [node-mongodb-neo4j](https://github.com/akarsh/node-mongodb-neo4j)
+
+  Author: [Nicolas Ibanheiz](https://github.com/Ibanheiz)
+
+  License: [ISC](https://github.com/akarsh/node-mongodb-neo4j)
+
+* Project: [moneo](https://github.com/srfrnk/moneo)
+
+  Author: [Shahar Frank](https://github.com/srfrnk)
+
+  License: [MIT](https://github.com/srfrnk/moneo/blob/master/LICENSE.txt)
