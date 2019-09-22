@@ -31,7 +31,7 @@
     "method-override": "^2.3.5",
     "moneo": "^1.1.2",
     "mongoose": "^4.0.0",
-    "morgan": "^1.6.1",
+    "morgan": "^1.9.1",
     "neo4j": "^2.0.0-RC1",
     "nodemon": "^1.7.0"
   }
