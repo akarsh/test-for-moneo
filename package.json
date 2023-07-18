@@ -30,7 +30,7 @@
     "express": "^4.13.3",
     "method-override": "^2.3.5",
     "moneo": "^1.1.2",
-    "mongoose": "^4.0.0",
+    "mongoose": "^5.13.20",
     "morgan": "^1.9.1",
     "neo4j": "^2.0.0-RC1",
     "nodemon": "^1.7.0"
