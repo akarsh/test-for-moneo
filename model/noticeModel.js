@@ -2,7 +2,7 @@ module.exports = function (moneo, mongoose) {
 	// declaration for mongoose Schema
 	var Schema = mongoose.Schema;
 
-// notice schema
+	// notice schema
 	var NoticeSchema = new Schema({
 		title: {
 			type: String,
@@ -22,13 +22,13 @@ module.exports = function (moneo, mongoose) {
 			nodeProperty: true,
 			default: ''
 		},
-	   data: {
+		data: {
 			type: Date,
 			// setting the nodeProperty to true; will save this schema property in neo4j graph db
 			nodeProperty: true,
 			default: Date.now
 		},
-	  active: {
+		active: {
 			type: Boolean,
 			// setting the nodeProperty to true; will save this schema property in neo4j graph db
 			nodeProperty: true,
@@ -44,9 +44,9 @@ module.exports = function (moneo, mongoose) {
 
 	// running a cypherQuery for the data model
 	// this query will fetch all the nodes and return all the nodes.
-	noticemodel.cypherQuery({query: 'match (n) return n'}, function (err, res) {
-				console.log("Result of notice model "+res.length);
-		});
+	noticemodel.cypherQuery({ query: 'match (n) return n' }, function (err, res) {
+		console.log("Result of notice model " + res);
+	});
 
 	// data model is returned
 	return noticemodel;
